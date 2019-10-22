@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /*.circle{*/
+    /*  box-sizing: border-box;*/
+    /*}*/
+    .out{
+      width:136px;
+      height: 136px;
+      border-radius: 50%;
+      border: 2px solid #c95e63;
+      background: #e99e98;
+      display: flex;
+      align-items: center;
+    }
+    .in{
+      margin: auto;
+      /*text-align: center;*/
+      z-index: 5;
+      width:80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #c95e63;
+      background-color: #fff;
+      text-align: center;
+      display: flex;
+
+    }
+    .grade_num {
+      margin: auto;
+      font-size: 36px;
+      color: #c95e63;
+    }
+  </style>
+</head>
+<body>
+<div class="out">
+  <div class="in">
+    <p class="grade_num">59</p>
+  </div>
+</div>
+<div id="box"></div>
+<div id="box2"></div
+<script>
+  var obj={
+    a:{
+      text:'健康',
+      bgc:'red'
+    }
+  }
+  document.getElementById('box').innerText=obj.a.text;
+  document.getElementById('box2').innerText=obj.b ? ('我不存在'): obj.a.text
+</script>
+</body>
+</html>
